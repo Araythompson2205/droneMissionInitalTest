@@ -39,7 +39,7 @@ public class MainActivity extends Activity implements SurfaceTextureListener,OnC
     private Button mCaptureBtn, mShootPhotoModeBtn, mRecordVideoModeBtn;
     private ToggleButton mRecordBtn;
     private TextView recordingTime;
-    private droneMission missiona = new droneMission();
+    private droneMission missiona;
     private Handler handler;
 
     @Override
@@ -49,7 +49,7 @@ public class MainActivity extends Activity implements SurfaceTextureListener,OnC
         setContentView(R.layout.activity_main);
 
         handler = new Handler();
-
+        missiona= new droneMission();
         initUI();
 
         // The callback for receiving the raw H264 video data for camera live view

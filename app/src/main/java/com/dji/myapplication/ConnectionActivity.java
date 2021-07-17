@@ -35,7 +35,7 @@ import dji.sdk.sdkmanager.DJISDKManager;
 public class ConnectionActivity extends Activity implements View.OnClickListener {
 
     private static final String TAG = ConnectionActivity.class.getName();
-
+    private droneMission test;
     private TextView mTextConnectionStatus;
     private TextView mTextProduct;
     private TextView mVersionTv;
@@ -62,6 +62,7 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        test= new droneMission();
         checkAndRequestPermissions();
         setContentView(R.layout.activity_connection);
         initUI();
