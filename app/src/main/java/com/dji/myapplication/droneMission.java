@@ -18,6 +18,7 @@ public class droneMission
     //more after verifiying the usage of the mission timeline
     public droneMission()
     {
+        elements= new ArrayList<>();
         missiona=MissionControl.getInstance();
 
         elements.add(new TakeOffAction());
