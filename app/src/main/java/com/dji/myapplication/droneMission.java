@@ -10,7 +10,7 @@ import dji.sdk.mission.timeline.actions.*;
 public class droneMission
 {
     private MissionControl missiona,missionEnd;
-    private float height = (float) -15.00;
+    private float height = (float) -1.00;
     private List<TimelineElement> elements;
     //private float angle = (float)50.00;
     //setup for the missions, adding actions to be executed sequentially
